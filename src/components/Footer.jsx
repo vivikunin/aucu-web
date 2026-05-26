@@ -3,11 +3,11 @@ import { externalLinks, organization } from '../data/site'
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/12 bg-[#142d49]">
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-blue-50 sm:flex-row sm:items-center sm:justify-between">
+    <footer className="border-t border-white/12 bg-aucu-blue-dark">
+      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-slate-100 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-bold text-white">{organization.name}</p>
-          <p className="text-blue-100">{organization.fullName}</p>
+          <p className="text-slate-300">{organization.fullName}</p>
         </div>
         <div className="flex flex-wrap gap-3">
           <a className="footer-link" href="mailto:contacto@aucu.org.uy">

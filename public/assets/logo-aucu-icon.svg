@@ -1,0 +1,9 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AUCU isotipo</title>
+  <desc id="desc">Isotipo de Asociacion Uruguaya de Consumidores Unidos</desc>
+  <circle cx="96" cy="28" r="17" fill="#C9D2D9"/>
+  <path d="M42 62C60 69 77 72 96 72C115 72 132 69 150 62V96C150 136 127 162 96 179C65 162 42 136 42 96V62Z" fill="#AD261F"/>
+  <path d="M96 72V178" stroke="#F7F8FA" stroke-width="10" stroke-linecap="round"/>
+  <path d="M43 100C60 108 78 112 96 112C114 112 132 108 149 100" stroke="#F7F8FA" stroke-width="10" stroke-linecap="round"/>
+  <path d="M96 72C115 72 132 69 150 62V96C150 136 127 162 96 179V72Z" fill="#970F14" fill-opacity=".35"/>
+</svg>

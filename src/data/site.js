@@ -4,7 +4,7 @@ export const externalLinks = {
 }
 
 export const assets = {
-  logo: '/assets/logo-aucu.png',
+  logo: '/assets/logo-aucu.svg',
   banner: '/assets/banner-jornadas.png',
 }
 
@@ -36,45 +36,74 @@ export const event = {
     venue: 'Sala Acuna de Figueroa, Palacio Legislativo (Anexo)',
     city: 'Montevideo, Uruguay',
     note: 'Ubicacion editable para confirmar datos finales del evento.',
+    mapUrl: 'https://www.google.com/maps/search/?api=1&query=Sala%20Acuna%20de%20Figueroa%20Palacio%20Legislativo%20Montevideo%20Uruguay',
+    mapEmbedUrl: 'https://www.google.com/maps?q=Sala%20Acuna%20de%20Figueroa%20Palacio%20Legislativo%20Montevideo%20Uruguay&output=embed',
   },
   intro:
     'Un encuentro para intercambiar perspectivas academicas, institucionales y ciudadanas sobre relaciones de consumo.',
   agenda: [
     {
-      time: '18:00',
-      title: 'Acreditaciones y bienvenida',
-      description: 'Recepcion de participantes y apertura institucional.',
+      date: 'Jueves 22 de octubre de 2026',
+      title: 'Primera jornada',
+      items: [
+        {
+          time: '18:00',
+          title: 'Acreditaciones y bienvenida',
+          description: 'Recepcion de participantes y apertura institucional.',
+        },
+        {
+          time: '18:30',
+          title: 'Panel internacional',
+          description: 'Exposiciones sobre desafios actuales en relaciones de consumo.',
+        },
+        {
+          time: '20:00',
+          title: 'Intercambio con asistentes',
+          description: 'Preguntas, comentarios y cierre de la primera jornada.',
+        },
+      ],
     },
     {
-      time: '18:30',
-      title: 'Panel internacional',
-      description: 'Exposiciones sobre desafios actuales en relaciones de consumo.',
-    },
-    {
-      time: '20:00',
-      title: 'Intercambio con asistentes',
-      description: 'Preguntas, comentarios y cierre de la primera jornada.',
+      date: 'Viernes 23 de octubre de 2026',
+      title: 'Segunda jornada',
+      items: [
+        {
+          time: '09:30',
+          title: 'Apertura de la segunda jornada',
+          description: 'Recepcion de participantes y presentacion de actividades del dia.',
+        },
+        {
+          time: '10:00',
+          title: 'Mesa de trabajo',
+          description: 'Intercambio institucional sobre desafios actuales en consumo.',
+        },
+        {
+          time: '11:30',
+          title: 'Cierre y conclusiones',
+          description: 'Sintesis de aportes y cierre provisorio del encuentro.',
+        },
+      ],
     },
   ],
   speakers: [
     {
-      name: 'Dr. Javier Wajntraub',
+      name: 'Orador número 1',
       role: 'Invitado internacional',
       description: 'Especialista invitado. Descripcion editable para completar biografia y tema de exposicion.',
       photo: '',
     },
     {
-      name: 'Dra. Martina Rojo',
-      role: 'Invitada internacional',
-      description: 'Especialista invitada. Descripcion editable para completar biografia y tema de exposicion.',
+      name: 'Dra. Dora Szafir',
+      role: 'Invitada especial',
+      description: 'Ganadora al premio de mejor abuela.',
       photo: '',
     },
     {
-      name: 'Dr. Sebastian Barocelli',
+      name: 'Orador número 3',
       role: 'Invitado internacional',
       description: 'Especialista invitado. Descripcion editable para completar biografia y tema de exposicion.',
       photo: '',
     },
   ],
-  supports: ['CADE', 'FCU', 'Laboratorio Artobe', 'Alimentos Centenario'],
+  supports: ['Organización número 1', 'Organización número 2', 'Organización número 3', 'Organización número 4'],
 }

@@ -1,11 +1,14 @@
 import { motion } from 'framer-motion'
 
 const bubbles = [
-  { className: 'bubble bubble-gold bubble-xl bubble-top-right', delay: 0 },
-  { className: 'bubble bubble-soft bubble-lg bubble-left', delay: 0.08 },
+  { className: 'bubble bubble-blue bubble-xl bubble-top-right', delay: 0 },
+  { className: 'bubble bubble-soft bubble-md bubble-left', delay: 0.08 },
   { className: 'bubble bubble-white bubble-sm bubble-mid-right', delay: 0.16 },
   { className: 'bubble bubble-red bubble-xs bubble-mid-left', delay: 0.22 },
-  { className: 'bubble bubble-gold bubble-md bubble-bottom-right', delay: 0.28 },
+  { className: 'bubble bubble-blue bubble-md bubble-bottom-right', delay: 0.28 },
+  { className: 'bubble bubble-soft bubble-sm bubble-hero-left', delay: 0.12 },
+  { className: 'bubble bubble-red bubble-sm bubble-lower-left', delay: 0.18 },
+  { className: 'bubble bubble-white bubble-xs bubble-lower-mid', delay: 0.24 },
 ]
 
 export function DecorativeBubbles() {

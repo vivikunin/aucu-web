@@ -1,0 +1,16 @@
+<svg width="640" height="220" viewBox="0 0 640 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AUCU</title>
+  <desc id="desc">Asociacion Uruguaya de Consumidores Unidos</desc>
+  <g transform="translate(34 24)">
+    <circle cx="76" cy="19" r="16" fill="#C9D2D9"/>
+    <path d="M22 50C40 57 57 60 76 60C95 60 112 57 130 50V84C130 124 107 150 76 167C45 150 22 124 22 84V50Z" fill="#AD261F"/>
+    <path d="M76 60V166" stroke="#F7F8FA" stroke-width="10" stroke-linecap="round"/>
+    <path d="M23 88C40 96 58 100 76 100C94 100 112 96 129 88" stroke="#F7F8FA" stroke-width="10" stroke-linecap="round"/>
+    <path d="M76 60C95 60 112 57 130 50V84C130 124 107 150 76 167V60Z" fill="#970F14" fill-opacity=".35"/>
+  </g>
+  <g transform="translate(190 55)">
+    <text x="0" y="70" fill="#70A5F5" font-family="Montserrat, Gotham, Inter, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="3">AUCU</text>
+    <text x="4" y="104" fill="#9AA6B2" font-family="Bahnschrift, Inter, Arial, sans-serif" font-size="25" font-weight="700">Asociacion Uruguaya</text>
+    <text x="4" y="132" fill="#9AA6B2" font-family="Bahnschrift, Inter, Arial, sans-serif" font-size="25" font-weight="700">de Consumidores Unidos</text>
+  </g>
+</svg>

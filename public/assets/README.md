@@ -2,7 +2,8 @@
 
 Colocar aqui los archivos visuales definitivos:
 
-- `logo-aucu.png` para el logo institucional.
+- `logo-aucu.svg` para el logo institucional.
+- `logo-aucu-icon.svg` para el isotipo usado como favicon.
 - `banner-jornadas.png` para el banner del evento.
 - fotos de expositores.
 - logos de apoyos institucionales.

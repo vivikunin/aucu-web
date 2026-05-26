@@ -49,7 +49,7 @@ function CountdownUnit({ value, label }) {
   )
 }
 
-export function Countdown({ targetDate }) {
+export function Countdown({ targetDate, dateLabel }) {
   const initial = useMemo(() => getTimeLeft(targetDate), [targetDate])
   const [timeLeft, setTimeLeft] = useState(initial)
 
@@ -59,16 +59,19 @@ export function Countdown({ targetDate }) {
   }, [targetDate])
 
   return (
-    <div className="rounded-md border border-white/70 bg-white/85 p-4 shadow-xl shadow-aucu-blue/10 backdrop-blur md:p-6">
-      <div className="mb-4 flex items-center justify-between gap-3">
-        <p className="text-sm font-bold uppercase tracking-[0.18em] text-aucu-red">Cuenta regresiva</p>
-        <p className="text-sm text-slate-500">{timeLeft.ended ? 'Evento iniciado' : 'Hasta el evento'}</p>
-      </div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <CountdownUnit value={timeLeft.days} label="Dias" />
-        <CountdownUnit value={timeLeft.hours} label="Horas" />
-        <CountdownUnit value={timeLeft.minutes} label="Min" />
-        <CountdownUnit value={timeLeft.seconds} label="Seg" />
+    <div className="relative">
+      <div className="absolute inset-0 h-56 rounded-full bg-aucu-blue/24 blur-3xl" aria-hidden="true" />
+      <div className="relative rounded-md p-5 md:p-6">
+        <div className="mb-4 grid gap-1">
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-aucu-red">Cuenta regresiva</p>
+          {dateLabel && <p className="font-bold leading-tight text-white">{dateLabel}</p>}
+        </div>
+        <div className="grid grid-cols-4 gap-2">
+          <CountdownUnit value={timeLeft.days} label="Dias" />
+          <CountdownUnit value={timeLeft.hours} label="Horas" />
+          <CountdownUnit value={timeLeft.minutes} label="Min" />
+          <CountdownUnit value={timeLeft.seconds} label="Seg" />
+        </div>
       </div>
     </div>
   )
