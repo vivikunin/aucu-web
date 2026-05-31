@@ -2,7 +2,7 @@ export function Button({ href, children, variant = 'primary', className = '' }) 
   const styles =
     variant === 'secondary'
       ? 'border border-aucu-blue/35 bg-white text-aucu-blue-dark hover:border-aucu-red/50 hover:text-aucu-red'
-      : 'bg-aucu-red text-white shadow-lg shadow-aucu-red/20 hover:bg-red-900 hover:text-white'
+      : 'border border-aucu-red bg-aucu-red text-white shadow-lg shadow-aucu-red/20 hover:border-white hover:bg-aucu-red hover:text-white'
 
   return (
     <a

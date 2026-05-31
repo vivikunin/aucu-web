@@ -1,4 +1,4 @@
-import { Camera, Mail } from 'lucide-react'
+import { Camera, Mail, MessageCircle } from 'lucide-react'
 import { externalLinks, organization } from '../data/site'
 
 export function Footer() {
@@ -10,13 +10,17 @@ export function Footer() {
           <p className="text-slate-300">{organization.fullName}</p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <a className="footer-link" href="mailto:contacto@aucu.org.uy">
+          <a className="footer-link" href="mailto:aucu2017@gmail.com">
             <Mail size={16} />
-            contacto@aucu.org.uy
+            aucu2017@gmail.com
           </a>
           <a className="footer-link" href={externalLinks.instagram} target="_blank" rel="noreferrer">
             <Camera size={16} />
             Instagram
+          </a>
+          <a className="footer-link" href={externalLinks.whatsappChannel} target="_blank" rel="noreferrer">
+            <MessageCircle size={16} />
+            WhatsApp
           </a>
         </div>
       </div>

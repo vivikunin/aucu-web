@@ -1,6 +1,7 @@
 export const externalLinks = {
   affiliationForm: 'https://docs.google.com/forms/d/e/1FAIpQLSft0FmmnvPZSskVHROxAt4_KieQb3wmrXr6OdGZnXE6Z36poA/viewform',
   instagram: 'https://www.instagram.com/consumidores_unidos/',
+  whatsappChannel: 'https://whatsapp.com/channel/0029VbDTIkiCsU9IwisZyp47',
 }
 
 export const assets = {
@@ -11,11 +12,11 @@ export const assets = {
 export const organization = {
   name: 'AUCU',
   fullName: 'Asociacion Uruguaya de Consumidores Unidos',
-  tagline: 'Consumidores informados, organizados y protegidos.',
+  tagline: 'Consumidores informados y organizados.',
   mission:
-    'Promover, defender y representar los derechos de las personas consumidoras en Uruguay, impulsando informacion clara, participacion ciudadana y practicas responsables.',
+    'Promover, defender y representar los derechos de los consumidores en Uruguay, impulsando información clara, participación ciudadana y prácticas responsables.',
   vision:
-    'Ser una referencia nacional en educacion, incidencia y articulacion social para construir relaciones de consumo mas justas, transparentes y sostenibles.',
+    'Ser una referencia nacional en educación, incidencia y articulación social para construir relaciones de consumo más justas y transparentes.',
   whoWeAre:
     'Somos una asociacion civil uruguaya orientada a reunir consumidores, profesionales y aliados institucionales para fortalecer la defensa colectiva de derechos.',
   whatWeDo: [
@@ -25,15 +26,25 @@ export const organization = {
     'Orientacion inicial y promocion de buenas practicas de consumo.',
   ],
   affiliation:
-    'Sumate a AUCU para participar de actividades, recibir novedades y apoyar una voz colectiva por relaciones de consumo mas equilibradas.',
+    'Participa y acompaña el crecimiento de AUCU.',
+  whatsappChannel:
+    'Unite a nuestro canal de WhatsApp para recibir novedades, actividades y comunicaciones de AUCU de forma directa.',
+  boardPeriod: '2026 - 2029',
+  boardMembers: [
+    { name: 'Dra. Dora Szafir', role: 'Presidenta' },
+    { name: 'Esc. Alejandro Guerrero', role: 'Secretario' },
+    { name: 'Genaro Stack', role: 'Vicepresidente' },
+    { name: 'Cra. Elisa Vaccaro', role: 'Tesorera' },
+    { name: 'Dra. Marina Sperindé', role: 'Vocal' },
+  ],
 }
 
 export const event = {
-  title: 'Jornada Internacional de Relaciones de Consumo',
+  title: 'II Jornadas Internacionales de Defensa del Consumidor',
   dateLabel: '22 y 23 de octubre de 2026',
   targetDate: '2026-10-22T18:00:00-03:00',
   location: {
-    venue: 'Sala Acuna de Figueroa, Palacio Legislativo (Anexo)',
+    venue: 'Palacio Legislativo (Anexo) Sala Acuña de Figueroa',
     city: 'Montevideo, Uruguay',
     note: 'Ubicacion editable para confirmar datos finales del evento.',
     mapUrl: 'https://www.google.com/maps/search/?api=1&query=Sala%20Acuna%20de%20Figueroa%20Palacio%20Legislativo%20Montevideo%20Uruguay',
@@ -44,7 +55,7 @@ export const event = {
   agenda: [
     {
       date: 'Jueves 22 de octubre de 2026',
-      title: 'Primera jornada',
+      title: 'Primer día',
       items: [
         {
           time: '18:00',
@@ -59,17 +70,17 @@ export const event = {
         {
           time: '20:00',
           title: 'Intercambio con asistentes',
-          description: 'Preguntas, comentarios y cierre de la primera jornada.',
+          description: 'Preguntas, comentarios y cierre del primer día.',
         },
       ],
     },
     {
       date: 'Viernes 23 de octubre de 2026',
-      title: 'Segunda jornada',
+      title: 'Segundo día',
       items: [
         {
           time: '09:30',
-          title: 'Apertura de la segunda jornada',
+          title: 'Apertura del segundo día',
           description: 'Recepcion de participantes y presentacion de actividades del dia.',
         },
         {
