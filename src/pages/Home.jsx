@@ -16,7 +16,7 @@ export function Home() {
       <section className="hero-band">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-[1.2fr_0.8fr] md:py-24">
           <div className="order-2 md:order-1">
-            <p className="eyebrow">Asociacion civil uruguaya</p>
+            <p className="eyebrow">Asociación civil uruguaya</p>
             <h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
               {organization.tagline}
             </h1>
@@ -63,10 +63,10 @@ export function Home() {
 
       <AnimatedSection className="section-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <SectionHeading eyebrow="Quienes somos" title="Una comunidad para fortalecer la voz de los consumidores" />
+          <SectionHeading eyebrow="Quiénes somos" title="Una comunidad para fortalecer la voz de los consumidores" />
           <p className="mt-4 text-lg leading-8 text-slate-100">{organization.whoWeAre}</p>
         </div>
-        <div className="self-start rounded-md bg-white p-6 shadow-sm ring-1 ring-slate-200">
+        <div className="self-start rounded-md bg-white p-6 shadow-sm ring-1 ring-slate-200 lg:mt-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-aucu-red">Qué hacemos</p>
           <ul className="mt-5 grid gap-4">
             {organization.whatWeDo.map((item) => (
@@ -98,7 +98,7 @@ export function Home() {
       <AnimatedSection className="section-shell">
         <CtaBand
           eyebrow="Afiliarse"
-          title="Participá y acompaná el crecimiento de AUCU"
+          title="Participá y acompañá el crecimiento de AUCU"
           description={organization.affiliation}
           actionHref={externalLinks.affiliationForm}
           actionLabel="AFILIARSE"

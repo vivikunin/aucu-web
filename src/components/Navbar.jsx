@@ -14,14 +14,14 @@ export function Navbar() {
 
   return (
     <header className="site-menu">
-      <button className="menu-trigger" type="button" onClick={() => setOpen((value) => !value)} aria-label="Abrir navegacion" aria-expanded={open}>
+      <button className="menu-trigger" type="button" onClick={() => setOpen((value) => !value)} aria-label="Abrir navegación" aria-expanded={open}>
         {open ? <X size={22} /> : <Menu size={22} />}
       </button>
       <AnimatePresence>
         {open && (
           <motion.nav
             className="menu-band"
-            aria-label="Navegacion principal"
+            aria-label="Navegación principal"
             initial={{ opacity: 0, y: -28, clipPath: 'inset(0 0 100% 0)' }}
             animate={{ opacity: 1, y: 0, clipPath: 'inset(0 0 0% 0)' }}
             exit={{ opacity: 0, y: -18, clipPath: 'inset(0 0 100% 0)' }}

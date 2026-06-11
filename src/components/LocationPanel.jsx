@@ -9,7 +9,7 @@ export function LocationPanel({ location }) {
             <MapPin size={28} />
           </span>
           <div>
-            <h2 className="!mt-1">Ubicacion</h2>
+            <h2 className="!mt-0">Ubicación</h2>
           </div>
         </div>
         <div className="mt-5 grid gap-2">
@@ -23,7 +23,7 @@ export function LocationPanel({ location }) {
         href={location.mapUrl}
         target="_blank"
         rel="noreferrer"
-        aria-label="Abrir ubicacion en Google Maps"
+        aria-label="Abrir ubicación en Google Maps"
       >
         <iframe
           className="pointer-events-none h-full w-full rounded-md border border-slate-200"

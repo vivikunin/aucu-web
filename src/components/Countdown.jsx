@@ -67,7 +67,7 @@ export function Countdown({ targetDate, dateLabel }) {
           {dateLabel && <p className="font-bold leading-tight text-white">{dateLabel}</p>}
         </div>
         <div className="grid grid-cols-4 gap-2">
-          <CountdownUnit value={timeLeft.days} label="Dias" />
+          <CountdownUnit value={timeLeft.days} label="Días" />
           <CountdownUnit value={timeLeft.hours} label="Horas" />
           <CountdownUnit value={timeLeft.minutes} label="Min" />
           <CountdownUnit value={timeLeft.seconds} label="Seg" />

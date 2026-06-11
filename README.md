@@ -1,6 +1,6 @@
 # AUCU Web
 
-Sitio institucional para AUCU, Asociacion Uruguaya de Consumidores Unidos.
+Sitio institucional para AUCU, Asociación Uruguaya de Consumidores Unidos.
 
 ## Stack
 
@@ -35,10 +35,10 @@ El archivo `public/_redirects` permite que las rutas SPA funcionen al refrescar 
 
 Editar `src/data/site.js` para actualizar:
 
-- link de afiliacion Google Forms.
+- link de afiliación Google Forms.
 - link de Instagram.
 - fecha objetivo de la cuenta regresiva.
 - textos institucionales.
 - agenda, expositores y apoyos.
 
-Colocar imagenes definitivas en `public/assets/`.
+Colocar imágenes definitivas en `public/assets/`.

@@ -8,6 +8,7 @@ export function Footer() {
         <div>
           <p className="font-bold text-white">{organization.name}</p>
           <p className="text-slate-300">{organization.fullName}</p>
+          <p className="footer-credit">Diseño y desarrollo web por Viviane Kunin</p>
         </div>
         <div className="flex flex-wrap gap-3">
           <a className="footer-link" href="mailto:aucu2017@gmail.com">

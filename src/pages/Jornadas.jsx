@@ -53,11 +53,11 @@ export function Jornadas() {
           className="flex flex-col"
         >
           <div className="mt-5">
-            <p>Reserva tu lugar en las jornadas y recibi las novedades del evento.</p>
+            <p>Reservá tu lugar en las jornadas y recibí las novedades del evento.</p>
           </div>
           <div className="pt-3">
             <p>
-              El enlace de inscripción estará disponible en este espacio cuando se acerque la fecha del evento.
+              El enlace de inscripción estará disponible en este espacio cuando se aproxime la fecha del evento.
             </p>
             {/*
             <Button className="w-full max-w-sm px-8 py-4 text-base">Ir al formulario</Button>

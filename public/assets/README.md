@@ -1,6 +1,6 @@
 # Assets AUCU
 
-Colocar aqui los archivos visuales definitivos:
+Colocar aquí los archivos visuales definitivos:
 
 - `logo-aucu.svg` para el logo institucional.
 - `logo-aucu-icon.svg` para el isotipo usado como favicon.
@@ -8,4 +8,4 @@ Colocar aqui los archivos visuales definitivos:
 - fotos de expositores.
 - logos de apoyos institucionales.
 
-La web ya tiene placeholders si estos archivos todavia no existen.
+La web ya tiene placeholders si estos archivos todavía no existen.
