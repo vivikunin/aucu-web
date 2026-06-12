@@ -1,5 +1,5 @@
-import { ClipboardCheck } from 'lucide-react'
-// import { Agenda } from '../components/Agenda'
+import { CalendarDays, ClipboardCheck } from 'lucide-react'
+import { Agenda } from '../components/Agenda'
 import { AnimatedSection } from '../components/AnimatedSection'
 import { AssetImage } from '../components/AssetImage'
 // import { Button } from '../components/Button'
@@ -68,18 +68,16 @@ export function Jornadas() {
         <LocationPanel location={event.location} />
       </AnimatedSection>
 
-      {/*
       <AnimatedSection className="section-shell">
         <InfoPanel
           icon={CalendarDays}
           iconClassName="bg-aucu-blue/15 text-aucu-blue-dark"
-          title="Agenda"
+          title="Programa"
           className="w-full"
         >
           <Agenda days={event.agenda} />
         </InfoPanel>
       </AnimatedSection>
-      */}
 
       {/*
       <AnimatedSection className="section-shell">

@@ -41,10 +41,10 @@ export const organization = {
 
 export const event = {
   title: 'II Jornadas Internacionales de Defensa del Consumidor',
-  dateLabel: '22 y 23 de octubre de 2026',
+  dateLabel: '22 y 23 de octubre',
   targetDate: '2026-10-22T18:00:00-03:00',
   location: {
-    venue: 'Palacio Legislativo (Anexo) Sala Acuña de Figueroa',
+    venue: 'Sala Acuña de Figueroa',
     city: 'Montevideo, Uruguay',
     mapUrl: 'https://www.google.com/maps/search/?api=1&query=Sala%20Acuna%20de%20Figueroa%20Palacio%20Legislativo%20Montevideo%20Uruguay',
     mapEmbedUrl: 'https://www.google.com/maps?q=Sala%20Acuna%20de%20Figueroa%20Palacio%20Legislativo%20Montevideo%20Uruguay&output=embed',
@@ -53,44 +53,74 @@ export const event = {
     'Un encuentro para intercambiar perspectivas académicas, institucionales y ciudadanas sobre relaciones de consumo.',
   agenda: [
     {
-      date: 'Jueves 22 de octubre de 2026',
+      date: 'Jueves 22 de octubre',
       title: 'Primer día',
       items: [
         {
           time: '18:00',
-          title: 'Acreditaciones y bienvenida',
-          description: 'Recepción de participantes y apertura institucional.',
+          title: 'Himno Nacional',
+          description: 'Coro del Sodre',
         },
         {
-          time: '18:30',
-          title: 'Panel internacional',
-          description: 'Exposiciones sobre desafíos actuales en relaciones de consumo.',
+          time: '18:20 – 19:00',
+          title: 'Mesa de apertura',
+          description: 'Acto inaugural',
         },
         {
-          time: '20:00',
-          title: 'Intercambio con asistentes',
-          description: 'Preguntas, comentarios y cierre del primer día.',
+          time: '19:15 – 19:30',
+          title: 'Corte',
+          description: '',
+        },
+        {
+          time: '19:45 – 21:00',
+          title: 'Sobreendeudamiento y Fintech',
+          description: 'Mesa temática',
         },
       ],
     },
     {
-      date: 'Viernes 23 de octubre de 2026',
+      date: 'Viernes 23 de octubre',
       title: 'Segundo día',
       items: [
         {
-          time: '09:30',
-          title: 'Apertura del segundo día',
-          description: 'Recepción de participantes y presentación de actividades del día.',
+          time: '9:30 – 11:00',
+          title: 'Comercio electrónico y plataformas digitales',
+          description: 'Mesa temática',
         },
         {
-          time: '10:00',
-          title: 'Mesa de trabajo',
-          description: 'Intercambio institucional sobre desafíos actuales en consumo.',
+          time: '11:00 – 11:15',
+          title: 'Corte',
+          description: '',
         },
         {
-          time: '11:30',
-          title: 'Cierre y conclusiones',
-          description: 'Síntesis de aportes y cierre provisorio del encuentro.',
+          time: '11:15 – 12:45',
+          title: 'Protección del usuario de servicios de salud',
+          description: 'Mesa temática',
+        },
+        {
+          time: '',
+          title: 'Receso · tarde libre',
+          description: '',
+        },
+        {
+          time: '18:00 – 19:00',
+          title: 'El rol del Estado en la protección del consumidor',
+          description: 'Mesa temática',
+        },
+        {
+          time: '19:00 – 19:15',
+          title: 'Corte',
+          description: '',
+        },
+        {
+          time: '19:15 – 20:45',
+          title: 'Inteligencia Artificial',
+          description: 'Mesa temática',
+        },
+        {
+          time: '20:45 – 21:00',
+          title: 'Cierre',
+          description: 'Palabras finales',
         },
       ],
     },

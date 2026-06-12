@@ -656,23 +656,28 @@ a {
 
 .agenda-row {
   display: grid;
-  grid-template-columns: 4.5rem 1fr;
-  gap: 1rem;
+  grid-template-columns: minmax(6.7rem, max-content) 1fr;
+  gap: 1.35rem;
   border-top: 1px solid #e2e8f0;
-  padding-top: 1rem;
+  padding-top: 0.72rem;
+}
+
+.agenda-row > div {
+  min-width: 0;
 }
 
 .agenda-row span {
   font-weight: 950;
   color: #ad261f;
+  white-space: nowrap;
 }
 
 .agenda-day > div:first-child p {
   margin: 0;
   color: #ad261f;
-  font-size: 0.78rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
+  font-size: 1rem;
+  font-weight: 950;
+  letter-spacing: 0;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -680,10 +685,37 @@ a {
 .agenda-row h4 {
   font-weight: 900;
   color: #151617;
+  overflow-wrap: break-word;
 }
 
 .agenda-row p {
-  margin-top: 0.35rem;
+  margin-top: 0.18rem;
+}
+
+.agenda-row-pause span,
+.agenda-row-pause h4 {
+  color: #9ca3af;
+}
+
+.agenda-row-pause h4 {
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .agenda-day {
+    padding-left: 0.65rem;
+  }
+
+  .agenda-row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .agenda-row h4 {
+    word-break: normal;
+  }
 }
 
 .speaker-card {
