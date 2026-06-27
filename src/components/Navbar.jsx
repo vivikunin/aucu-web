@@ -5,7 +5,8 @@ import { NavLink } from 'react-router-dom'
 import { externalLinks } from '../data/site'
 
 const navItems = [
-  { label: 'Home', href: '/home' },
+  { label: 'Home', href: '/' },
+  { label: 'Novedades', href: '/novedades' },
   { label: 'Jornadas', href: '/jornadas' },
 ]
 

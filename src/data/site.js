@@ -39,6 +39,45 @@ export const organization = {
   ],
 }
 
+// Agregá cada novedad nueva al comienzo de esta lista para que aparezca primero.
+// Las imágenes se guardan en public/assets/novedades/ y se referencian desde
+// aquí como "/assets/novedades/nombre-del-archivo.jpg".
+export const newsPosts = [
+  {
+    id: 'proteccion-deudores-bajos-recursos',
+    date: '26 de junio de 2026',
+    title: 'AUCU fue recibido por la Comisión de Hacienda de la Cámara de Representantes para el análisis del proyecto de ley de Protección de Deudores de Bajos Recursos',
+    text: `Fuimos recibidos por la Comisión de Hacienda de la Cámara de Representantes para el análisis del proyecto de ley de Protección de Deudores de Bajos Recursos.
+
+Algunos datos del diagnóstico que presentamos:
+📌 Más de 1 millón de uruguayos están en el Clearing de Informes.
+📌 Más de 600.000 están en categorías 4 o 5 del Banco Central.
+📌 Una deuda de $27.000 puede crecer a $1.341.000 en 7 años — sin violar la ley de usura vigente.
+
+El problema no es la irresponsabilidad de los deudores. Es un sistema donde los intereses capitalizan mensualmente y la tasa de mora la fijan los propios acreedores.
+
+El proyecto protege a familias con ingresos menores a $80.000/mes que cayeron en deuda por causas ajenas a su voluntad: enfermedad, pérdida de empleo, pandemia.
+
+Apoyamos la iniciativa. Y señalamos lo que falta: atacar la capitalización mensual y dotar de recursos reales al organismo de control UDECO.
+
+El debate del sobreendeudamiento viene desde 2007. Esperar más no es una opción — es una decisión política con consecuencias reales para quienes hoy no pueden pagar el alquiler, no acceden a crédito, y no tienen salida.`,
+    images: [
+      {
+        src: '/assets/novedades/noticia1.1.jpeg',
+        alt: 'AUCU ante la Comisión de Hacienda de la Cámara de Representantes',
+      },
+      {
+        src: '/assets/novedades/noticia1.2.jpeg',
+        alt: 'Presentación de AUCU sobre la protección de deudores de bajos recursos',
+      },
+      {
+        src: '/assets/novedades/noticia1.3.jpeg',
+        alt: 'Reunión por el proyecto de ley de Protección de Deudores de Bajos Recursos',
+      },
+    ],
+  },
+]
+
 export const event = {
   title: 'II Jornadas Internacionales de Defensa del Consumidor',
   dateLabel: '22 y 23 de octubre',

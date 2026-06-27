@@ -79,6 +79,19 @@ export function Home() {
         </div>
       </AnimatedSection>
 
+      <AnimatedSection className="section-shell grid gap-6 lg:grid-cols-[1.5fr_1.1fr] lg:items-center">
+        <SectionHeading eyebrow="Novedades" title="Conocé las últimas novedades de AUCU" />
+        <div className="flex flex-col items-center justify-start gap-4">
+          <Button href="/novedades" className="min-h-14 px-8 py-3 text-base">
+            Ver novedades
+            <ArrowRight size={18} />
+          </Button>
+          <p className="home-news-intro">
+            Actividades, noticias y contenidos de interés para nuestra comunidad.
+          </p>
+        </div>
+      </AnimatedSection>
+
       <AnimatedSection className="section-shell grid gap-6">
         <SectionHeading
           eyebrow="Comisión directiva"

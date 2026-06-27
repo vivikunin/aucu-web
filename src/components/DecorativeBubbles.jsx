@@ -6,7 +6,6 @@ const bubbles = [
   { className: 'bubble bubble-white bubble-sm bubble-mid-right', delay: 0.16 },
   { className: 'bubble bubble-red bubble-xs bubble-mid-left', delay: 0.22 },
   { className: 'bubble bubble-blue bubble-md bubble-bottom-right', delay: 0.28 },
-  { className: 'bubble bubble-soft bubble-sm bubble-hero-left', delay: 0.12 },
   { className: 'bubble bubble-red bubble-sm bubble-lower-left', delay: 0.18 },
   { className: 'bubble bubble-white bubble-xs bubble-lower-mid', delay: 0.24 },
 ]
