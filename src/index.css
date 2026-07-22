@@ -976,7 +976,8 @@ a {
 
 .support-logo-placeholder {
   display: grid;
-  min-height: 11rem;
+  height: 11rem;
+  overflow: hidden;
   place-items: center;
   border-bottom: 1px solid #e2e8f0;
   background: #f8fafc;

@@ -1,3 +1,15 @@
+import alimentosCentenarioLogo from '../assets/logos_colaboradores/alimentos-centenario.png'
+import cadeLogo from '../assets/logos_colaboradores/CADE.svg'
+import fundacionCulturaUniversitariaLogo from '../assets/logos_colaboradores/fundacion-de-cultura-universitaria.png'
+import reclamaxLogo from '../assets/logos_colaboradores/reclamax.png'
+import barocelliPhoto from '../assets/fotos_expositores/Barocelli.jpg'
+import bertoncelloPhoto from '../assets/fotos_expositores/Bertoncello.jpg'
+import martinaRojoPhoto from '../assets/fotos_expositores/martina-rojo___6266ad62e7f395001bd56bc9.png'
+import muinoPhoto from '../assets/fotos_expositores/muino.jpg'
+import szafirPhoto from '../assets/fotos_expositores/Szafir-Dora-1web-1-e1582130949263.jpg'
+import tambussiPhoto from '../assets/fotos_expositores/tambussi.jpg'
+import traboulsiPhoto from '../assets/fotos_expositores/Traboulsi.jpeg'
+
 export const externalLinks = {
   affiliationForm: 'https://docs.google.com/forms/d/e/1FAIpQLSft0FmmnvPZSskVHROxAt4_KieQb3wmrXr6OdGZnXE6Z36poA/viewform',
   instagram: 'https://www.instagram.com/aucu.uy/',
@@ -166,23 +178,66 @@ export const event = {
   ],
   speakers: [
     {
-      name: 'Orador número 1',
-      role: 'Invitado internacional',
-      description: 'Especialista invitado. Descripción editable para completar biografía y tema de exposición.',
-      photo: '',
+      name: 'Dr. Carlos Eduardo Tambussi',
+      country: 'Argentina',
+      flag: '🇦🇷',
+      description:
+        'Juez de primera instancia de la Justicia en las Relaciones de Consumo de la Ciudad Autónoma de Buenos Aires. Profesor regular en la Facultad de Derecho de la Universidad de Buenos Aires (UBA). Autor de libros y artículos sobre derecho del consumidor en publicaciones nacionales y extranjeras.',
+      photo: tambussiPhoto,
+    },
+    {
+      name: 'Dr. Sebastián Barocelli',
+      country: 'Argentina',
+      flag: '🇦🇷',
+      description:
+        'Director de la carrera de Abogacía en la Universidad del Salvador (USAL) y profesor en la Universidad de Buenos Aires (UBA). Vicepresidente de la Asociación Internacional de Derecho del Consumidor (IACL) y ex Director Nacional de Defensa del Consumidor de Argentina.',
+      photo: barocelliPhoto,
+    },
+    {
+      name: 'Dra. Karen Bertoncello',
+      country: 'Brasil',
+      flag: '🇧🇷',
+      description:
+        'Jueza del Tribunal de Justiça de Rio Grande do Sul (TJRS), coordinadora del Núcleo de Gestión del Sobreendeudamiento y Doctora por la UFRGS.',
+      photo: bertoncelloPhoto,
+    },
+    {
+      name: 'Dra. Martina Rojo',
+      country: 'Argentina',
+      flag: '🇦🇷',
+      description:
+        'Profesora titular de Derecho Económico Internacional y directora de la carrera de Abogacía (Programa Franco-Argentino) en la Universidad del Salvador (USAL). Directora del Máster en Derecho de los Negocios Internacionales América Latina-Europa (Universidad Paris 1 Panthéon-Sorbonne, sede Argentina). Experta en Derecho Internacional del Consumidor, integra el Grupo de Expertos en Derecho y Política del Consumidor de la UNCTAD (ONU).',
+      photo: martinaRojoPhoto,
     },
     {
       name: 'Dra. Dora Szafir',
-      role: 'Invitada especial',
-      description: 'Ganadora al premio de mejor abuela.',
-      photo: '',
+      country: 'Uruguay',
+      flag: '🇺🇾',
+      description:
+        'Profesora titular de Derecho Civil II y III en la Universidad de la Empresa, y ex profesora de Relaciones de Consumo en la Universidad de la República (hasta 2019). Ex jueza letrada en lo Civil y Presidenta de la Asociación Uruguaya de Consumidores Unidos (A.U.C.U.). Delegada en la elaboración de las leyes 17.250 (Relaciones de Consumo) y 18.507 (Pequeñas Causas), y autora de obras sobre responsabilidad médica, decenal y relaciones de consumo.',
+      photo: szafirPhoto,
     },
     {
-      name: 'Orador número 3',
-      role: 'Invitado internacional',
-      description: 'Especialista invitado. Descripción editable para completar biografía y tema de exposición.',
-      photo: '',
+      name: 'Dr. Fernando M. Blanco Muiño',
+      country: 'Argentina',
+      flag: '🇦🇷',
+      description:
+        'Abogado (UBA) con posgrado en la Universidad de Salamanca (España). Profesor adjunto de Derecho Constitucional en la UBA y docente de posgrados en Derecho del Consumidor en universidades de Argentina y el exterior. Fue presidente de la Unión de Consumidores de Argentina, Director Nacional de Defensa del Consumidor (2015-2019) y representante ante la OCDE, la OEA y la UNCTAD, entre otros organismos internacionales. Desde el 10 de diciembre de 2023 es Subsecretario de Defensa del Consumidor y Lealtad Comercial de la Nación.',
+      photo: muinoPhoto,
+    },
+    {
+      name: 'Dr. Carlos Lionel Traboulsi',
+      country: 'Argentina',
+      flag: '🇦🇷',
+      description:
+        'Abogado; diplomado en Relaciones Internacionales; ex Director General de Defensa y Protección al Consumidor de CABA; vicepresidente de Defensa y Protección al Consumidor de la Organización Demócrata Cristiana de América (ODCA); fundador y presidente de Fundación Argentina Azul.',
+      photo: traboulsiPhoto,
     },
   ],
-  supports: ['Organización número 1', 'Organización número 2', 'Organización número 3', 'Organización número 4'],
+  supports: [
+    { name: 'Reclamax', logo: reclamaxLogo },
+    { name: 'CADE', logo: cadeLogo },
+    { name: 'Alimentos Centenario', logo: alimentosCentenarioLogo },
+    { name: 'Fundación de Cultura Universitaria', logo: fundacionCulturaUniversitariaLogo },
+  ],
 }

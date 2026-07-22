@@ -2,15 +2,15 @@ import { CalendarDays, ClipboardCheck } from 'lucide-react'
 import { Agenda } from '../components/Agenda'
 import { AnimatedSection } from '../components/AnimatedSection'
 import { AssetImage } from '../components/AssetImage'
-// import { Button } from '../components/Button'
+import { Button } from '../components/Button'
 import { Countdown } from '../components/Countdown'
 import { DecorativeBubbles } from '../components/DecorativeBubbles'
 import { EventMetaPills } from '../components/EventMetaPills'
 import { InfoPanel } from '../components/InfoPanel'
 import { LocationPanel } from '../components/LocationPanel'
-// import { SectionHeading } from '../components/SectionHeading'
-// import { SpeakerCard } from '../components/SpeakerCard'
-// import { SupportLogo } from '../components/SupportLogo'
+import { SectionHeading } from '../components/SectionHeading'
+import { SpeakerCard } from '../components/SpeakerCard'
+import { SupportLogo } from '../components/SupportLogo'
 import { assets, event } from '../data/site'
 
 export function Jornadas() {
@@ -55,13 +55,13 @@ export function Jornadas() {
           <div className="mt-5">
             <p>Reservá tu lugar en las jornadas y recibí las novedades del evento.</p>
           </div>
-          <div className="pt-3">
-            <p>
-              El enlace de inscripción estará disponible en este espacio cuando se aproxime la fecha del evento.
-            </p>
-            {/*
-            <Button className="w-full max-w-sm px-8 py-4 text-base">Ir al formulario</Button>
-            */}
+          <div className="flex flex-1 items-center justify-center pt-3">
+            <Button
+              href="https://docs.google.com/forms/d/e/1FAIpQLSftwYpPqzeUylkOgAz-VGQjbcjIZjluLIw8s-Y3C-1C9Avekg/viewform?usp=header"
+              className="w-full max-w-sm px-8 py-4 text-base"
+            >
+              Ir al formulario
+            </Button>
           </div>
         </InfoPanel>
 
@@ -79,27 +79,27 @@ export function Jornadas() {
         </InfoPanel>
       </AnimatedSection>
 
-      {/*
       <AnimatedSection className="section-shell">
         <SectionHeading title="Expositores" />
-        <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {event.speakers.map((speaker) => (
-            <SpeakerCard speaker={speaker} key={speaker.name} />
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
+          {event.speakers.map((speaker, index) => (
+            <SpeakerCard
+              speaker={speaker}
+              key={speaker.name}
+              className={index === event.speakers.length - 1 && event.speakers.length % 3 === 1 ? 'md:col-start-2' : ''}
+            />
           ))}
         </div>
       </AnimatedSection>
-      */}
 
-      {/*
       <AnimatedSection className="section-shell">
-        <SectionHeading title="Colaboradores del evento" />
-        <div className="mt-8 grid gap-5 md:grid-cols-3">
+        <SectionHeading title="Apoyan" />
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {event.supports.map((support) => (
-            <SupportLogo name={support} key={support} />
+            <SupportLogo name={support.name} logo={support.logo} key={support.name} />
           ))}
         </div>
       </AnimatedSection>
-      */}
     </div>
   )
 }
