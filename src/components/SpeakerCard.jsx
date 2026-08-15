@@ -13,6 +13,8 @@ export function SpeakerCard({ speaker, className = '' }) {
   const photoClassName =
     speaker.name === 'Dr. Sebastián Barocelli'
       ? 'h-full w-full scale-125 object-cover object-top'
+      : speaker.name === 'Dra. Paula Eugenia Rodríguez'
+        ? 'h-full w-full object-cover object-[80%_top]'
       : 'h-full w-full object-cover object-top'
 
   return (

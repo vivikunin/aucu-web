@@ -1,4 +1,5 @@
-import { Camera, Mail, MessageCircle } from 'lucide-react'
+import { Mail, MessageCircle } from 'lucide-react'
+import { InstagramIcon } from './InstagramIcon'
 import { externalLinks, organization } from '../data/site'
 
 export function Footer() {
@@ -16,8 +17,16 @@ export function Footer() {
             aucu2017@gmail.com
           </a>
           <a className="footer-link" href={externalLinks.instagram} target="_blank" rel="noreferrer">
-            <Camera size={16} />
+            <InstagramIcon size={16} />
             Instagram
+          </a>
+          <a className="footer-link" href={externalLinks.tiktok} target="_blank" rel="noreferrer">
+            <span className="text-sm font-black leading-none">♪</span>
+            TikTok
+          </a>
+          <a className="footer-link" href={externalLinks.x} target="_blank" rel="noreferrer">
+            <span className="text-sm font-black leading-none">X</span>
+            Twitter
           </a>
           <a className="footer-link" href={externalLinks.whatsappChannel} target="_blank" rel="noreferrer">
             <MessageCircle size={16} />

@@ -14,6 +14,38 @@ import { SupportLogo } from '../components/SupportLogo'
 import { assets, event } from '../data/site'
 
 export function Jornadas() {
+  const speakerRemainder = event.speakers.length % 3
+
+  const getSpeakerClassName = (index) => {
+    if (speakerRemainder === 1 && index === event.speakers.length - 1) {
+      return 'md:col-span-2 md:col-start-3'
+    }
+
+    if (speakerRemainder === 2 && index === event.speakers.length - 2) {
+      return 'md:col-span-2 md:col-start-2'
+    }
+
+    return 'md:col-span-2'
+  }
+
+  const supportRemainder = event.supports.length % 4
+
+  const getSupportClassName = (index) => {
+    if (supportRemainder === 1 && index === event.supports.length - 1) {
+      return 'lg:col-span-2 lg:col-start-4'
+    }
+
+    if (supportRemainder === 2 && index === event.supports.length - 2) {
+      return 'lg:col-span-2 lg:col-start-3'
+    }
+
+    if (supportRemainder === 3 && index === event.supports.length - 3) {
+      return 'lg:col-span-2 lg:col-start-2'
+    }
+
+    return 'lg:col-span-2'
+  }
+
   return (
     <div className="page-frame">
       <DecorativeBubbles />
@@ -80,13 +112,13 @@ export function Jornadas() {
       </AnimatedSection>
 
       <AnimatedSection className="section-shell">
-        <SectionHeading title="Expositores" />
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
+        <SectionHeading title="Expositores destacados" />
+        <div className="mt-8 grid gap-4 md:grid-cols-6">
           {event.speakers.map((speaker, index) => (
             <SpeakerCard
               speaker={speaker}
               key={speaker.name}
-              className={index === event.speakers.length - 1 && event.speakers.length % 3 === 1 ? 'md:col-start-2' : ''}
+              className={getSpeakerClassName(index)}
             />
           ))}
         </div>
@@ -94,9 +126,15 @@ export function Jornadas() {
 
       <AnimatedSection className="section-shell">
         <SectionHeading title="Apoyan" />
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {event.supports.map((support) => (
-            <SupportLogo name={support.name} logo={support.logo} key={support.name} />
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-8">
+          {event.supports.map((support, index) => (
+            <SupportLogo
+              name={support.name}
+              logo={support.logo}
+              url={support.url}
+              key={support.name}
+              className={getSupportClassName(index)}
+            />
           ))}
         </div>
       </AnimatedSection>

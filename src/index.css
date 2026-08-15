@@ -905,7 +905,7 @@ a {
 
 .agenda-row {
   display: grid;
-  grid-template-columns: minmax(6.7rem, max-content) 1fr;
+  grid-template-columns: 7.8rem 1fr;
   gap: 1.35rem;
   border-top: 1px solid #e2e8f0;
   padding-top: 0.72rem;

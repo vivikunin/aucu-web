@@ -1,10 +1,11 @@
-import { ArrowRight, Camera, CheckCircle2, MessageCircle, ShieldCheck, UsersRound } from 'lucide-react'
+import { ArrowRight, CheckCircle2, MessageCircle, ShieldCheck, UsersRound } from 'lucide-react'
 import { AnimatedSection } from '../components/AnimatedSection'
 import { Button } from '../components/Button'
 import { CtaBand } from '../components/CtaBand'
 import { DecorativeBubbles } from '../components/DecorativeBubbles'
 import { EventMetaPills } from '../components/EventMetaPills'
 import { InfoPanel } from '../components/InfoPanel'
+import { InstagramIcon } from '../components/InstagramIcon'
 import { LogoMark } from '../components/LogoMark'
 import { SectionHeading } from '../components/SectionHeading'
 import { externalLinks, organization, event } from '../data/site'
@@ -27,7 +28,7 @@ export function Home() {
                 <ArrowRight size={18} />
               </Button>
               <Button href={externalLinks.instagram} variant="secondary" className="hero-action-button">
-                <Camera size={18} />
+                <InstagramIcon size={18} />
                 Instagram
               </Button>
               <Button href={externalLinks.whatsappChannel} variant="secondary" className="hero-action-button">

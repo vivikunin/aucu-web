@@ -1,11 +1,16 @@
 import alimentosCentenarioLogo from '../assets/logos_colaboradores/alimentos-centenario.png'
 import cadeLogo from '../assets/logos_colaboradores/CADE.svg'
+import ecijaLogo from '../assets/logos_colaboradores/ECIJA.jpeg'
 import fundacionCulturaUniversitariaLogo from '../assets/logos_colaboradores/fundacion-de-cultura-universitaria.png'
+import kroserLogo from '../assets/logos_colaboradores/Kroser.png'
+import macromercadoLogo from '../assets/logos_colaboradores/Macromercado.jpg'
 import reclamaxLogo from '../assets/logos_colaboradores/reclamax.png'
 import barocelliPhoto from '../assets/fotos_expositores/Barocelli.jpg'
 import bertoncelloPhoto from '../assets/fotos_expositores/Bertoncello.jpg'
-import martinaRojoPhoto from '../assets/fotos_expositores/martina-rojo___6266ad62e7f395001bd56bc9.png'
+import mansillaPhoto from '../assets/fotos_expositores/Mansilla.jpeg'
 import muinoPhoto from '../assets/fotos_expositores/muino.jpg'
+import rodriguezPhoto from '../assets/fotos_expositores/Rodríguez.jpg'
+import salazarPhoto from '../assets/fotos_expositores/Salazar.jpg'
 import szafirPhoto from '../assets/fotos_expositores/Szafir-Dora-1web-1-e1582130949263.jpg'
 import tambussiPhoto from '../assets/fotos_expositores/tambussi.jpg'
 import traboulsiPhoto from '../assets/fotos_expositores/Traboulsi.jpeg'
@@ -13,7 +18,9 @@ import traboulsiPhoto from '../assets/fotos_expositores/Traboulsi.jpeg'
 export const externalLinks = {
   affiliationForm: 'https://docs.google.com/forms/d/e/1FAIpQLSft0FmmnvPZSskVHROxAt4_KieQb3wmrXr6OdGZnXE6Z36poA/viewform',
   instagram: 'https://www.instagram.com/aucu.uy/',
+  tiktok: 'https://www.tiktok.com/@aucu64?_r=1&_t=ZS-98uIJ3J4Kkm',
   whatsappChannel: 'https://whatsapp.com/channel/0029VbDTIkiCsU9IwisZyp47',
+  x: 'https://x.com/aucuuy?s=11',
 }
 
 export const assets = {
@@ -110,7 +117,7 @@ export const event = {
         {
           time: '18:00',
           title: 'Himno Nacional',
-          description: 'Coro del Sodre',
+          description: '',
         },
         {
           time: '18:20 – 19:00',
@@ -202,12 +209,20 @@ export const event = {
       photo: bertoncelloPhoto,
     },
     {
-      name: 'Dra. Martina Rojo',
+      name: 'Dra. Paula Eugenia Rodríguez',
       country: 'Argentina',
       flag: '🇦🇷',
       description:
-        'Profesora titular de Derecho Económico Internacional y directora de la carrera de Abogacía (Programa Franco-Argentino) en la Universidad del Salvador (USAL). Directora del Máster en Derecho de los Negocios Internacionales América Latina-Europa (Universidad Paris 1 Panthéon-Sorbonne, sede Argentina). Experta en Derecho Internacional del Consumidor, integra el Grupo de Expertos en Derecho y Política del Consumidor de la UNCTAD (ONU).',
-      photo: martinaRojoPhoto,
+        'Maestranda en Negocios Internacionales-MBA (UCES) y especialista en Magistratura (UNLaM). Profesora de grado y posgrado en UBA, USAL e IUPFA, investigadora adscripta al Instituto Gioja e integrante del Instituto Argentino de Derecho del Consumidor. Actualmente se desempeña en la Secretaría General de Relaciones de Consumo del Ministerio Público de la Defensa de CABA.',
+      photo: rodriguezPhoto,
+    },
+    {
+      name: 'Dra. María Jimena Mansilla',
+      country: 'Argentina',
+      flag: '🇦🇷',
+      description:
+        'Maestranda en Magistratura, especialista en Administración de Justicia y posgraduada en Derecho del Consumidor. Docente de grado y posgrado en UBA y USAL, coordinadora de la Diplomatura en Derecho del Consumidor de USAL e integrante del Instituto Gioja y del Instituto Argentino de Derecho del Consumidor. Actualmente trabaja en el Departamento de Estudios en Derecho del Consumo del Ministerio Público de la Defensa de CABA.',
+      photo: mansillaPhoto,
     },
     {
       name: 'Dra. Dora Szafir',
@@ -233,11 +248,22 @@ export const event = {
         'Abogado; diplomado en Relaciones Internacionales; ex Director General de Defensa y Protección al Consumidor de CABA; vicepresidente de Defensa y Protección al Consumidor de la Organización Demócrata Cristiana de América (ODCA); fundador y presidente de Fundación Argentina Azul.',
       photo: traboulsiPhoto,
     },
+    {
+      name: 'Lic. Ricardo Salazar',
+      country: 'El Salvador',
+      flag: '🇸🇻',
+      description:
+        'Economista por la Universidad José Simeón Cañas (UCA, 2001), con maestría en Administración Pública por la Universidad Dr. José Matías Delgado y especialización en Regulación de Mercado. Cuenta con más de 25 años de experiencia en protección al consumidor y regulación de mercados en El Salvador, con distintos cargos en la Defensoría del Consumidor y el Banco Central de Reserva. Ha representado a El Salvador en organismos internacionales de defensa del consumidor, presidiendo el FIAGC, el Comité de Gestión de la RCSS y el CONCADECO.',
+      photo: salazarPhoto,
+    },
   ],
   supports: [
-    { name: 'Reclamax', logo: reclamaxLogo },
+    { name: 'Reclamax', logo: reclamaxLogo, url: 'https://reclamax.uy' },
     { name: 'CADE', logo: cadeLogo },
     { name: 'Alimentos Centenario', logo: alimentosCentenarioLogo },
     { name: 'Fundación de Cultura Universitaria', logo: fundacionCulturaUniversitariaLogo },
+    { name: 'Macromercado', logo: macromercadoLogo },
+    { name: 'Kroser', logo: kroserLogo },
+    { name: 'ECIJA', logo: ecijaLogo },
   ],
 }
