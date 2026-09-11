@@ -13,6 +13,16 @@ export function SupportLogo({ name, logo, url, className = '' }) {
     logoClassName = 'max-h-44 max-w-full translate-x-3 scale-[2.25] object-contain'
   } else if (name === 'ECIJA') {
     logoClassName = 'max-h-36 max-w-[90%] scale-105 object-contain'
+  } else if (name === '3P') {
+    logoClassName = 'max-h-40 max-w-[95%] scale-110 object-contain'
+  } else if (name === 'CED') {
+    logoClassName = 'max-h-40 max-w-[95%] scale-110 object-contain'
+  } else if (name === 'CLAEH') {
+    logoClassName = 'max-h-36 max-w-[90%] scale-110 object-contain'
+  } else if (name === 'Hogar Italiano') {
+    logoClassName = 'max-h-40 max-w-[95%] scale-110 object-contain'
+  } else if (name === 'Residencial Umpiérrez') {
+    logoClassName = 'max-h-40 max-w-[95%] scale-110 object-contain'
   }
 
   return (

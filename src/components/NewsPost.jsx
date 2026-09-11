@@ -7,8 +7,31 @@ export function NewsPost({ post }) {
   const [expanded, setExpanded] = useState(false)
   const [activeImage, setActiveImage] = useState(0)
   const images = post.images ?? []
-  const paragraphs = post.text.split('\n').filter(Boolean)
+  const paragraphs = post.text?.split('\n').filter(Boolean) ?? []
   const contentId = `news-content-${post.id}`
+
+  if (post.imageOnly && images.length > 0) {
+    return (
+      <article className="news-post news-post-image-only">
+        {post.title && (
+          <div className="news-post-copy">
+            <h2>{post.title}</h2>
+          </div>
+        )}
+        <AssetImage
+          src={images[0].src}
+          alt={images[0].alt || 'Novedad de AUCU'}
+          className="news-post-standalone-image"
+          fallback={
+            <div className="news-post-image-fallback">
+              <ImageIcon size={28} />
+              <span>Imagen no disponible</span>
+            </div>
+          }
+        />
+      </article>
+    )
+  }
 
   const showPreviousImage = () => {
     setActiveImage((current) => (current - 1 + images.length) % images.length)
@@ -27,8 +50,8 @@ export function NewsPost({ post }) {
             {post.date}
           </p>
         )}
-        <h2>{post.title}</h2>
-        {!expanded && <p className="news-post-preview">{paragraphs[0]}</p>}
+        {post.title && <h2>{post.title}</h2>}
+        {!expanded && paragraphs.length > 0 && <p className="news-post-preview">{paragraphs[0]}</p>}
 
         <button
           type="button"
@@ -52,11 +75,13 @@ export function NewsPost({ post }) {
             exit={{ height: 0, opacity: 0 }}
             transition={{ height: { duration: 0.42, ease: [0.22, 1, 0.36, 1] }, opacity: { duration: 0.3 } }}
           >
-            <div className="news-post-text">
-              {paragraphs.map((paragraph, index) => (
-                <p key={`${post.id}-${index}`}>{paragraph}</p>
-              ))}
-            </div>
+            {paragraphs.length > 0 && (
+              <div className="news-post-text">
+                {paragraphs.map((paragraph, index) => (
+                  <p key={`${post.id}-${index}`}>{paragraph}</p>
+                ))}
+              </div>
+            )}
 
             {images.length > 0 && (
               <div className="news-carousel">
@@ -64,24 +89,47 @@ export function NewsPost({ post }) {
                   <AnimatePresence mode="wait" initial={false}>
                     <motion.div
                       key={images[activeImage].src}
-                      className="news-carousel-slide"
+                      className={`news-carousel-slide ${images[activeImage].portrait ? 'news-carousel-slide-portrait' : ''}`}
                       initial={{ opacity: 0, x: 14 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -14 }}
                       transition={{ duration: 0.28, ease: 'easeOut' }}
                     >
-                      <AssetImage
-                        src={images[activeImage].src}
-                        alt={images[activeImage].alt || `${post.title} — imagen ${activeImage + 1}`}
-                        className="news-post-image"
-                        imgClassName="news-carousel-media"
-                        fallback={
-                          <div className="news-post-image-fallback">
-                            <ImageIcon size={28} />
-                            <span>Imagen no disponible</span>
-                          </div>
-                        }
-                      />
+                      {images[activeImage].href ? (
+                        <a
+                          className="news-carousel-link"
+                          href={images[activeImage].href}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`Abrir ${post.title}`}
+                        >
+                          <AssetImage
+                            src={images[activeImage].src}
+                            alt={images[activeImage].alt || `${post.title} — imagen ${activeImage + 1}`}
+                            className="news-post-image"
+                            imgClassName="news-carousel-media"
+                            fallback={
+                              <div className="news-post-image-fallback">
+                                <ImageIcon size={28} />
+                                <span>Imagen no disponible</span>
+                              </div>
+                            }
+                          />
+                        </a>
+                      ) : (
+                        <AssetImage
+                          src={images[activeImage].src}
+                          alt={images[activeImage].alt || `${post.title} — imagen ${activeImage + 1}`}
+                          className="news-post-image"
+                          imgClassName="news-carousel-media"
+                          fallback={
+                            <div className="news-post-image-fallback">
+                              <ImageIcon size={28} />
+                              <span>Imagen no disponible</span>
+                            </div>
+                          }
+                        />
+                      )}
                     </motion.div>
                   </AnimatePresence>
 

@@ -1,10 +1,15 @@
+import tresPLogo from '../assets/logos_colaboradores/3P.jpeg'
 import alimentosCentenarioLogo from '../assets/logos_colaboradores/alimentos-centenario.png'
 import cadeLogo from '../assets/logos_colaboradores/CADE.svg'
+import cedLogo from '../assets/logos_colaboradores/CED.png'
+import claehLogo from '../assets/logos_colaboradores/CLAEH.png'
 import ecijaLogo from '../assets/logos_colaboradores/ECIJA.jpeg'
 import fundacionCulturaUniversitariaLogo from '../assets/logos_colaboradores/fundacion-de-cultura-universitaria.png'
+import hogarItalianoLogo from '../assets/logos_colaboradores/Hogar Italiano.jpeg'
 import kroserLogo from '../assets/logos_colaboradores/Kroser.png'
 import macromercadoLogo from '../assets/logos_colaboradores/Macromercado.jpg'
 import reclamaxLogo from '../assets/logos_colaboradores/reclamax.png'
+import residencialUmpierrezLogo from '../assets/logos_colaboradores/Residencial Umpiérrez.jpeg'
 import barocelliPhoto from '../assets/fotos_expositores/Barocelli.jpg'
 import bertoncelloPhoto from '../assets/fotos_expositores/Bertoncello.jpg'
 import mansillaPhoto from '../assets/fotos_expositores/Mansilla.jpeg'
@@ -14,6 +19,7 @@ import salazarPhoto from '../assets/fotos_expositores/Salazar.jpg'
 import szafirPhoto from '../assets/fotos_expositores/Szafir-Dora-1web-1-e1582130949263.jpg'
 import tambussiPhoto from '../assets/fotos_expositores/tambussi.jpg'
 import traboulsiPhoto from '../assets/fotos_expositores/Traboulsi.jpeg'
+import noticia2Image from '../assets/noticia2.jpg'
 
 export const externalLinks = {
   affiliationForm: 'https://docs.google.com/forms/d/e/1FAIpQLSft0FmmnvPZSskVHROxAt4_KieQb3wmrXr6OdGZnXE6Z36poA/viewform',
@@ -62,6 +68,20 @@ export const organization = {
 // Las imágenes se guardan en public/assets/novedades/ y se referencian desde
 // aquí como "/assets/novedades/nombre-del-archivo.jpg".
 export const newsPosts = [
+  {
+    id: 'noticia-2',
+    date: '30 de noviembre de 2026',
+    title: 'Concurso Internacional Colección: Perspectivas Jurídicas Contemporáneas',
+    text: 'Convocatoria abierta a docentes, investigadores y profesionales de las ciencias jurídicas.',
+    images: [
+      {
+        src: noticia2Image,
+        alt: 'Concurso Internacional Colección: Perspectivas Jurídicas Contemporáneas',
+        href: 'https://fcu.edu.uy/coleccionperspectivasjuridicas?utm_source=ActiveCampaign&utm_medium=email&utm_content=Concurso%20Internacional%20Colecci%C3%B3n%3A%20Perspectivas%20Jur%C3%ADdicas%20Contempor%C3%A1neas%20%F0%9F%93%9A&utm_campaign=SEMANA%20ACAD%C3%89MICA%20DE%20DERECHO%20COMERCIAL%20%28Duplicar%29&vgo_ee=AuWWzOO4QRRaiyMD6I%2Fph4L8Uhf8ASU%2BBSJgLGKa50enbA%3D%3D%3AviiA%2BoMsUKWzuA19zJCpn0C%2B77R3%2BoAa',
+        portrait: true,
+      },
+    ],
+  },
   {
     id: 'proteccion-deudores-bajos-recursos',
     date: '26 de junio de 2026',
@@ -116,13 +136,14 @@ export const event = {
       items: [
         {
           time: '18:00',
-          title: 'Himno Nacional',
+          title: 'Himno Nacional / Coro',
           description: '',
         },
         {
           time: '18:20 – 19:00',
           title: 'Mesa de apertura',
-          description: 'Acto inaugural',
+          description:
+            'Suprema Corte de Justicia · Asociación de Magistrados del Uruguay · Unidad de Defensa del Consumidor · Asociación Uruguaya de Consumidores',
         },
         {
           time: '19:15 – 19:30',
@@ -132,7 +153,8 @@ export const event = {
         {
           time: '19:45 – 21:00',
           title: 'Sobreendeudamiento y Fintech',
-          description: 'Mesa temática',
+          description:
+            'Diputada Julieta Sierra 🇺🇾 · Dra. Paula Rodríguez 🇦🇷 · Dra. Karen Bartoncello 🇧🇷 · Dra. Dora Szafir 🇺🇾',
         },
       ],
     },
@@ -143,7 +165,8 @@ export const event = {
         {
           time: '9:30 – 11:00',
           title: 'Comercio electrónico y plataformas digitales',
-          description: 'Mesa temática',
+          description:
+            'Dra. María Jimena Mansilla 🇦🇷 · Dr. Esc. Gabriel Arias 🇺🇾 · Dr. Carlos Tambussi 🇦🇷 · Dra. Beatriz Rodríguez 🇺🇾',
         },
         {
           time: '11:00 – 11:15',
@@ -153,32 +176,30 @@ export const event = {
         {
           time: '11:15 – 12:45',
           title: 'Protección del usuario de servicios de salud',
-          description: 'Mesa temática',
+          description:
+            'Dr. Ricardo Voelker 🇺🇾 · Dr. Carlos Delpiazzo 🇺🇾 · Dr. Fernando Tobagliare 🇺🇾 · Dra. Laura Navarro 🇺🇾',
         },
         {
-          time: '',
-          title: 'Receso · tarde libre',
-          description: '',
+          time: '18:00 – 19:15',
+          title: 'Rol del Estado en la protección del consumidor',
+          description:
+            'Esc. Alejandro Guerrero 🇺🇾 · Dr. Ricardo Salazar 🇸🇻 · Dr. Carlos Traboulsi 🇦🇷 · Dr. Fernando Blanco Muiño 🇦🇷',
         },
         {
-          time: '18:00 – 19:00',
-          title: 'El rol del Estado en la protección del consumidor',
-          description: 'Mesa temática',
-        },
-        {
-          time: '19:00 – 19:15',
+          time: '19:15 – 19:30',
           title: 'Corte',
           description: '',
         },
         {
-          time: '19:15 – 20:45',
+          time: '19:30 – 21:00',
           title: 'Inteligencia Artificial',
-          description: 'Mesa temática',
+          description:
+            'Ing. Mariel Feder 🇺🇾 · Dr. Sebastián Barocelli 🇦🇷 · Dr. Ricardo Szalazar 🇸🇻 · Juan Pablo de Marco 🇺🇾',
         },
         {
-          time: '20:45 – 21:00',
+          time: '21:00 – 21:15',
           title: 'Cierre',
-          description: 'Palabras finales',
+          description: '',
         },
       ],
     },
@@ -265,5 +286,10 @@ export const event = {
     { name: 'Macromercado', logo: macromercadoLogo },
     { name: 'Kroser', logo: kroserLogo },
     { name: 'ECIJA', logo: ecijaLogo },
+    { name: '3P', logo: tresPLogo },
+    { name: 'CED', logo: cedLogo },
+    { name: 'CLAEH Universidad', logo: claehLogo },
+    { name: 'Hogar Italiano', logo: hogarItalianoLogo },
+    { name: 'Residencial Umpiérrez', logo: residencialUmpierrezLogo },
   ],
 }

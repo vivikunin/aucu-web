@@ -9,6 +9,9 @@ export function Agenda({ days }) {
           <div className="mt-3 grid gap-3">
             {day.items.map((item) => {
               const isPause = ['Corte', 'Receso · tarde libre'].includes(item.title)
+              const descriptionItems = item.description
+                ? item.description.split(' · ').filter(Boolean)
+                : []
 
               return (
                 <div
@@ -18,7 +21,13 @@ export function Agenda({ days }) {
                   <span>{item.time}</span>
                   <div>
                     <h4>{item.title}</h4>
-                    {item.description ? <p>{item.description}</p> : null}
+                    {descriptionItems.length > 0 ? (
+                      <ul className="agenda-speakers">
+                        {descriptionItems.map((descriptionItem) => (
+                          <li key={descriptionItem}>{descriptionItem}</li>
+                        ))}
+                      </ul>
+                    ) : null}
                   </div>
                 </div>
               )
