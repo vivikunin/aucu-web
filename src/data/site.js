@@ -122,10 +122,30 @@ export const event = {
   dateLabel: '22 y 23 de octubre',
   targetDate: '2026-10-22T18:00:00-03:00',
   location: {
-    venue: 'Sala Acuña de Figueroa',
+    venue: 'Sedes por día',
     city: 'Montevideo, Uruguay',
-    mapUrl: 'https://www.google.com/maps/search/?api=1&query=Sala%20Acuna%20de%20Figueroa%20Palacio%20Legislativo%20Montevideo%20Uruguay',
-    mapEmbedUrl: 'https://www.google.com/maps?q=Sala%20Acuna%20de%20Figueroa%20Palacio%20Legislativo%20Montevideo%20Uruguay&output=embed',
+    mapUrl: 'https://www.google.com/maps/search/?api=1&query=Salon%20de%20Eventos%20Especiales%20Palacio%20Legislativo%20Gral.%20Flores%20Montevideo%20Uruguay',
+    mapEmbedUrl: 'https://www.google.com/maps?q=Salon%20de%20Eventos%20Especiales%20Palacio%20Legislativo%20Gral.%20Flores%20Montevideo%20Uruguay&output=embed',
+    locations: [
+      {
+        date: '22 de octubre',
+        venue: 'Salón de Eventos Especiales',
+        address: 'Palacio Legislativo. Ingreso por Gral. Flores.',
+        mapUrl:
+          'https://www.google.com/maps/search/?api=1&query=Salon%20de%20Eventos%20Especiales%20Palacio%20Legislativo%20Gral.%20Flores%20Montevideo%20Uruguay',
+        mapEmbedUrl:
+          'https://www.google.com/maps?q=Salon%20de%20Eventos%20Especiales%20Palacio%20Legislativo%20Gral.%20Flores%20Montevideo%20Uruguay&output=embed',
+      },
+      {
+        date: '23 de octubre',
+        venue: 'Universidad CLAEH',
+        address: 'Mercedes 1776.',
+        mapUrl:
+          'https://www.google.com/maps/search/?api=1&query=Universidad%20CLAEH%20Mercedes%201776%20Montevideo%20Uruguay',
+        mapEmbedUrl:
+          'https://www.google.com/maps?q=Universidad%20CLAEH%20Mercedes%201776%20Montevideo%20Uruguay&output=embed',
+      },
+    ],
   },
   intro:
     'Un encuentro para intercambiar perspectivas académicas, institucionales y ciudadanas sobre relaciones de consumo.',
