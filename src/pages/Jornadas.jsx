@@ -11,6 +11,7 @@ import { LocationPanel } from '../components/LocationPanel'
 import { SectionHeading } from '../components/SectionHeading'
 import { SpeakerCard } from '../components/SpeakerCard'
 import { SupportLogo } from '../components/SupportLogo'
+import mecDeclarationLogo from '../assets/Logo MEC_Declarado de interés ministerial - 2025 color.png'
 import { assets, event } from '../data/site'
 
 export function Jornadas() {
@@ -78,24 +79,44 @@ export function Jornadas() {
       </section>
 
       <AnimatedSection className="section-shell grid gap-6 pb-0 lg:grid-cols-2 lg:items-stretch">
-        <InfoPanel
-          icon={ClipboardCheck}
-          iconClassName="bg-aucu-blue/15 text-aucu-blue-dark"
-          title="Inscribirse"
-          className="flex flex-col"
-        >
-          <div className="mt-5">
-            <p>Reservá tu lugar en las jornadas y recibí las novedades del evento.</p>
-          </div>
-          <div className="flex flex-1 items-center justify-center pt-3">
-            <Button
-              href="https://docs.google.com/forms/d/e/1FAIpQLSftwYpPqzeUylkOgAz-VGQjbcjIZjluLIw8s-Y3C-1C9Avekg/viewform?usp=header"
-              className="w-full max-w-sm px-8 py-4 text-base"
-            >
-              Ir al formulario
-            </Button>
-          </div>
-        </InfoPanel>
+        <div className="grid gap-6 lg:grid-rows-2">
+          <InfoPanel
+            icon={ClipboardCheck}
+            iconClassName="bg-aucu-blue/15 text-aucu-blue-dark"
+            title="Inscribirse"
+            className="flex flex-col"
+          >
+            <div className="mt-5">
+              <p>Reservá tu lugar en las jornadas y recibí las novedades del evento.</p>
+            </div>
+            <div className="flex flex-1 items-center justify-center pt-3">
+              <Button
+                href="https://docs.google.com/forms/d/e/1FAIpQLSftwYpPqzeUylkOgAz-VGQjbcjIZjluLIw8s-Y3C-1C9Avekg/viewform?usp=header"
+                className="w-full max-w-sm px-8 py-4 text-base"
+              >
+                Ir al formulario
+              </Button>
+            </div>
+          </InfoPanel>
+
+          <article className="info-panel flex flex-col justify-center">
+            <div className="grid gap-4">
+              <img
+                src={mecDeclarationLogo}
+                alt="MEC - Declarado de interés ministerial 2025"
+                className="h-auto w-full"
+              />
+            </div>
+            <div className="flex flex-1 items-center justify-center pt-3">
+              <Button
+                href="/assets/declaracion-interes-ministerial-mec.pdf"
+                className="w-full max-w-sm px-8 py-4 text-center text-base"
+              >
+                Abrir
+              </Button>
+            </div>
+          </article>
+        </div>
 
         <LocationPanel location={event.location} />
       </AnimatedSection>
