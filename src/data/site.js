@@ -13,7 +13,6 @@ import residencialUmpierrezLogo from '../assets/logos_colaboradores/Residencial 
 import barocelliPhoto from '../assets/fotos_expositores/Barocelli.jpg'
 import bertoncelloPhoto from '../assets/fotos_expositores/Bertoncello.jpg'
 import mansillaPhoto from '../assets/fotos_expositores/Mansilla.jpeg'
-import muinoPhoto from '../assets/fotos_expositores/muino.jpg'
 import rodriguezPhoto from '../assets/fotos_expositores/Rodríguez.jpg'
 import salazarPhoto from '../assets/fotos_expositores/Salazar.jpg'
 import szafirPhoto from '../assets/fotos_expositores/Szafir-Dora-1web-1-e1582130949263.jpg'
@@ -166,15 +165,15 @@ export const event = {
             'Suprema Corte de Justicia · Asociación de Magistrados del Uruguay · Unidad de Defensa del Consumidor · Asociación Uruguaya de Consumidores',
         },
         {
-          time: '19:15 – 19:30',
+          time: '19:00 – 19:20',
           title: 'Corte',
           description: '',
         },
         {
-          time: '19:45 – 21:00',
+          time: '19:20 – 21:00',
           title: 'Sobreendeudamiento y Fintech',
           description:
-            'Diputada Julieta Sierra 🇺🇾 · Dra. Paula Rodríguez 🇦🇷 · Dra. Karen Bartoncello 🇧🇷 · Dra. Dora Szafir 🇺🇾',
+            'Cra. Elisa Vaccaro 🇺🇾: ¿Usura legal? · Dra. Paula Rodríguez 🇦🇷: IA, arquitectura persuasiva e hipervulnerabilidad digital en infancias y adolescentes consumidores. · Dra. Karen Bertoncello 🇧🇷: Tratamiento del sobreendeudamiento en el Poder Judicial brasileño. · Dra. Dora Szafir 🇺🇾: Sobreendeudados, ¿atrapados sin salida?',
         },
       ],
     },
@@ -184,9 +183,9 @@ export const event = {
       items: [
         {
           time: '9:30 – 11:00',
-          title: 'Comercio electrónico y plataformas digitales',
+          title: 'Comercio Electrónico / Plataformas Digitales',
           description:
-            'Dra. María Jimena Mansilla 🇦🇷 · Dr. Esc. Gabriel Arias 🇺🇾 · Dr. Carlos Tambussi 🇦🇷 · Dra. Beatriz Rodríguez 🇺🇾',
+            'Dra. María Jimena Mansilla 🇦🇷: Publicidad de influencers e inteligencia artificial. Desafíos regulatorios. · Dr. Esc. Gabriel Arias 🇺🇾: Obligaciones y responsabilidades de las plataformas digitales frente a los consumidores. · Dr. Carlos Tambussi 🇦🇷: Comercio electrónico y plataformas de venta. · Dra. Beatriz Rodríguez 🇺🇾: Después del clic, ¿quién responde en la nueva relación de consumo digital?',
         },
         {
           time: '11:00 – 11:15',
@@ -195,29 +194,29 @@ export const event = {
         },
         {
           time: '11:15 – 12:45',
-          title: 'Protección del usuario de servicios de salud',
+          title: 'Protección del Usuario de Servicios de Salud',
           description:
-            'Dr. Ricardo Voelker 🇺🇾 · Dr. Carlos Delpiazzo 🇺🇾 · Dr. Fernando Tobagliare 🇺🇾 · Dra. Laura Navarro 🇺🇾',
+            'Dr. Ricardo Voelker 🇺🇾: El valor del tiempo para el paciente. · Dr. Carlos Delpiazzo 🇺🇾: La responsabilidad médica a la luz de los principios fundamentales de defensa del consumidor. · Dr. Fernando Tobagliare 🇺🇾: Reflexiones sobre el consentimiento informado en la responsabilidad civil. · Dr. Francisco Majó 🇺🇾: Seguridad y la historia clínica electrónica.',
         },
         {
           time: '18:00 – 19:15',
-          title: 'Rol del Estado en la protección del consumidor',
+          title: 'Rol del Estado en la Protección del Consumidor',
           description:
-            'Esc. Alejandro Guerrero 🇺🇾 · Dr. Ricardo Salazar 🇸🇻 · Dr. Carlos Traboulsi 🇦🇷 · Dr. Fernando Blanco Muiño 🇦🇷',
+            'Esc. Alejandro Guerrero 🇺🇾: Innovar para incluir. · Dr. Ricardo Salazar 🇸🇻: Acciones estratégicas para expandir la protección al consumidor en El Salvador. · Dr. Carlos Traboulsi 🇦🇷: Deudores morosos. Ausencia estatal.',
         },
         {
-          time: '19:15 – 19:30',
+          time: '19:15 – 19:40',
           title: 'Corte',
           description: '',
         },
         {
-          time: '19:30 – 21:00',
+          time: '19:40 – 20:45',
           title: 'Inteligencia Artificial',
           description:
-            'Ing. Mariel Feder 🇺🇾 · Dr. Sebastián Barocelli 🇦🇷 · Dr. Ricardo Szalazar 🇸🇻 · Juan Pablo de Marco 🇺🇾',
+            'Ing. Mariel Feder 🇺🇾: Inteligencia artificial. Qué es y cómo nos va a cambiar. · Dr. Sebastián Barocelli 🇦🇷: Desafíos del mercado de consumo frente a la IA. · Dr. Ricardo Salazar 🇸🇻: Gobernanza digital y servicios seguros. Defensoría del Consumidor en El Salvador. · Juan Pablo de Marco 🇺🇾: Funciones y riesgos en ChatGPT y otras herramientas en el comercio.',
         },
         {
-          time: '21:00 – 21:15',
+          time: '20:45 – 21:00',
           title: 'Cierre',
           description: '',
         },
@@ -272,14 +271,6 @@ export const event = {
       description:
         'Profesora titular de Derecho Civil II y III en la Universidad de la Empresa, y ex profesora de Relaciones de Consumo en la Universidad de la República (hasta 2019). Ex jueza letrada en lo Civil y Presidenta de la Asociación Uruguaya de Consumidores Unidos (A.U.C.U.). Delegada en la elaboración de las leyes 17.250 (Relaciones de Consumo) y 18.507 (Pequeñas Causas), y autora de obras sobre responsabilidad médica, decenal y relaciones de consumo.',
       photo: szafirPhoto,
-    },
-    {
-      name: 'Dr. Fernando M. Blanco Muiño',
-      country: 'Argentina',
-      flag: '🇦🇷',
-      description:
-        'Abogado (UBA) con posgrado en la Universidad de Salamanca (España). Profesor adjunto de Derecho Constitucional en la UBA y docente de posgrados en Derecho del Consumidor en universidades de Argentina y el exterior. Fue presidente de la Unión de Consumidores de Argentina, Director Nacional de Defensa del Consumidor (2015-2019) y representante ante la OCDE, la OEA y la UNCTAD, entre otros organismos internacionales. Desde el 10 de diciembre de 2023 es Subsecretario de Defensa del Consumidor y Lealtad Comercial de la Nación.',
-      photo: muinoPhoto,
     },
     {
       name: 'Dr. Carlos Lionel Traboulsi',

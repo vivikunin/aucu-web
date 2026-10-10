@@ -1,4 +1,4 @@
-import { CalendarDays, ClipboardCheck } from 'lucide-react'
+import { CalendarDays, ClipboardCheck, Download } from 'lucide-react'
 import { Agenda } from '../components/Agenda'
 import { AnimatedSection } from '../components/AnimatedSection'
 import { AssetImage } from '../components/AssetImage'
@@ -127,8 +127,14 @@ export function Jornadas() {
           iconClassName="bg-aucu-blue/15 text-aucu-blue-dark"
           title="Programa"
           className="w-full"
+          headerAction={
+            <Button href="/assets/Programa%20AUCU.pdf" download="Programa AUCU.pdf">
+              <Download aria-hidden="true" size={18} />
+              Descargar programa
+            </Button>
+          }
         >
-          <Agenda days={event.agenda} />
+          <Agenda days={event.agenda} locations={event.location.locations} />
         </InfoPanel>
       </AnimatedSection>
 

@@ -1,10 +1,13 @@
-export function Agenda({ days }) {
+export function Agenda({ days, locations }) {
   return (
     <div className="mt-4 grid gap-5 lg:grid-cols-2 lg:gap-6">
-      {days.map((day) => (
+      {days.map((day, index) => (
         <section className="agenda-day" key={day.date}>
           <div>
-            <p>{day.date}</p>
+            <p className="agenda-date">{day.date}</p>
+            <p className="agenda-location">
+              {locations[index].venue} · {locations[index].address}
+            </p>
           </div>
           <div className="mt-3 grid gap-3">
             {day.items.map((item) => {

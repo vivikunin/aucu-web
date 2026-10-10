@@ -966,7 +966,7 @@ a {
   white-space: nowrap;
 }
 
-.agenda-day > div:first-child p {
+.agenda-date {
   margin: 0;
   color: #ad261f;
   font-size: 1rem;
@@ -974,6 +974,13 @@ a {
   letter-spacing: 0;
   line-height: 1.4;
   text-transform: uppercase;
+}
+
+.agenda-location {
+  margin-top: 0.2rem;
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .agenda-row h4 {
