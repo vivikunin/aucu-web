@@ -44,10 +44,14 @@ export function Home() {
         </div>
       </section>
       <AnimatedSection className="section-shell grid gap-6 lg:grid-cols-[1.5fr_1.1fr] lg:items-center">
-        <SectionHeading eyebrow="Próximas jornadas" title="Conocé más sobre nuestras próximas jornadas" />
+        <SectionHeading eyebrow="Jornadas 2026" title="Conocé cómo fueron nuestras Jornadas 2026" />
         <div className="flex flex-col items-center justify-start gap-4">
-          <EventMetaPills dateLabel={event.dateLabel} city={event.location.city} />
-          <Button href="/jornadas" className="text-base px-8 py-3 min-h-14">Jornadas 2026
+          <EventMetaPills
+            dateLabel={event.dateLabel}
+            city={event.location.city}
+            className="event-meta-home"
+          />
+          <Button href="/jornadas" className="text-base px-8 py-3 min-h-14">Ver Jornadas 2026
             <ArrowRight size={18} />
           </Button>
         </div>

@@ -22,34 +22,40 @@ export function LocationPanel({ location }) {
           <div className="mt-5 grid gap-4">
             {location.locations.map((item) => (
               <div
-                className="location-day"
+                className={`location-day ${item.mapUrl ? '' : 'location-day-static'}`}
                 key={`${item.date}-${item.venue}`}
               >
-                <a
-                  className="block border-l-4 border-aucu-red pl-4 transition hover:border-aucu-blue"
-                  href={item.mapUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <p className="text-sm font-black uppercase text-aucu-red">{item.date}</p>
-                  <p className="text-lg font-bold text-aucu-blue-dark">{item.venue}</p>
-                  <p className="text-base font-semibold text-slate-600">{item.address}</p>
-                </a>
-                <a
-                  className="location-map location-day-map"
-                  href={item.mapUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`Abrir mapa de ${item.venue}`}
-                >
-                  <iframe
-                    className="pointer-events-none h-full w-full rounded-md border border-slate-200"
-                    src={item.mapEmbedUrl}
-                    title={`Mapa de ${item.venue}`}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
-                </a>
+                {item.mapUrl ? (
+                  <a
+                    className="block border-l-4 border-aucu-red pl-4 transition hover:border-aucu-blue"
+                    href={item.mapUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <LocationDetails item={item} />
+                  </a>
+                ) : (
+                  <div className="border-l-4 border-aucu-red pl-4">
+                    <LocationDetails item={item} />
+                  </div>
+                )}
+                {item.mapUrl && item.mapEmbedUrl ? (
+                  <a
+                    className="location-map location-day-map"
+                    href={item.mapUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Abrir mapa de ${item.venue}`}
+                  >
+                    <iframe
+                      className="pointer-events-none h-full w-full rounded-md border border-slate-200"
+                      src={item.mapEmbedUrl}
+                      title={`Mapa de ${item.venue}`}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+                  </a>
+                ) : null}
               </div>
             ))}
           </div>
@@ -79,5 +85,16 @@ export function LocationPanel({ location }) {
         </a>
       )}
     </article>
+  )
+}
+
+function LocationDetails({ item }) {
+  return (
+    <>
+      <p className="text-sm font-black uppercase text-aucu-red">{item.date}</p>
+      <p className="text-lg font-bold text-aucu-blue-dark">{item.venue}</p>
+      {item.address && <p className="text-base font-semibold text-slate-600">{item.address}</p>}
+      {item.city && <p className="text-base font-semibold text-slate-600">{item.city}</p>}
+    </>
   )
 }

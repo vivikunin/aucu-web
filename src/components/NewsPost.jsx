@@ -1,11 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { CalendarDays, ChevronDown, ChevronLeft, ChevronRight, ImageIcon } from 'lucide-react'
+import { CalendarDays, ChevronDown, ImageIcon } from 'lucide-react'
 import { useState } from 'react'
 import { AssetImage } from './AssetImage'
+import { ImageCarousel } from './ImageCarousel'
 
 export function NewsPost({ post }) {
   const [expanded, setExpanded] = useState(false)
-  const [activeImage, setActiveImage] = useState(0)
   const images = post.images ?? []
   const paragraphs = post.text?.split('\n').filter(Boolean) ?? []
   const contentId = `news-content-${post.id}`
@@ -31,14 +31,6 @@ export function NewsPost({ post }) {
         />
       </article>
     )
-  }
-
-  const showPreviousImage = () => {
-    setActiveImage((current) => (current - 1 + images.length) % images.length)
-  }
-
-  const showNextImage = () => {
-    setActiveImage((current) => (current + 1) % images.length)
   }
 
   return (
@@ -83,84 +75,7 @@ export function NewsPost({ post }) {
               </div>
             )}
 
-            {images.length > 0 && (
-              <div className="news-carousel">
-                <div className="news-carousel-stage">
-                  <AnimatePresence mode="wait" initial={false}>
-                    <motion.div
-                      key={images[activeImage].src}
-                      className={`news-carousel-slide ${images[activeImage].portrait ? 'news-carousel-slide-portrait' : ''}`}
-                      initial={{ opacity: 0, x: 14 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: -14 }}
-                      transition={{ duration: 0.28, ease: 'easeOut' }}
-                    >
-                      {images[activeImage].href ? (
-                        <a
-                          className="news-carousel-link"
-                          href={images[activeImage].href}
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label={`Abrir ${post.title}`}
-                        >
-                          <AssetImage
-                            src={images[activeImage].src}
-                            alt={images[activeImage].alt || `${post.title} — imagen ${activeImage + 1}`}
-                            className="news-post-image"
-                            imgClassName="news-carousel-media"
-                            fallback={
-                              <div className="news-post-image-fallback">
-                                <ImageIcon size={28} />
-                                <span>Imagen no disponible</span>
-                              </div>
-                            }
-                          />
-                        </a>
-                      ) : (
-                        <AssetImage
-                          src={images[activeImage].src}
-                          alt={images[activeImage].alt || `${post.title} — imagen ${activeImage + 1}`}
-                          className="news-post-image"
-                          imgClassName="news-carousel-media"
-                          fallback={
-                            <div className="news-post-image-fallback">
-                              <ImageIcon size={28} />
-                              <span>Imagen no disponible</span>
-                            </div>
-                          }
-                        />
-                      )}
-                    </motion.div>
-                  </AnimatePresence>
-
-                  {images.length > 1 && (
-                    <>
-                      <button type="button" className="news-carousel-arrow news-carousel-arrow-left" onClick={showPreviousImage} aria-label="Ver imagen anterior">
-                        <ChevronLeft size={24} />
-                      </button>
-                      <button type="button" className="news-carousel-arrow news-carousel-arrow-right" onClick={showNextImage} aria-label="Ver imagen siguiente">
-                        <ChevronRight size={24} />
-                      </button>
-                    </>
-                  )}
-                </div>
-
-                {images.length > 1 && (
-                  <div className="news-carousel-dots" aria-label="Seleccionar imagen">
-                    {images.map((image, index) => (
-                      <button
-                        type="button"
-                        key={image.src}
-                        className={`news-carousel-dot ${index === activeImage ? 'news-carousel-dot-active' : ''}`}
-                        onClick={() => setActiveImage(index)}
-                        aria-label={`Ver imagen ${index + 1}`}
-                        aria-current={index === activeImage ? 'true' : undefined}
-                      />
-                    ))}
-                  </div>
-                )}
-              </div>
-            )}
+            <ImageCarousel images={images} title={post.title || 'Galería de la novedad'} />
           </motion.div>
         )}
       </AnimatePresence>

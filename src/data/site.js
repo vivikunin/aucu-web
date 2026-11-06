@@ -118,15 +118,15 @@ El debate del sobreendeudamiento viene desde 2007. Esperar más no es una opció
 
 export const event = {
   title: 'II Jornadas Internacionales de Defensa del Consumidor',
-  dateLabel: '22 y 23 de octubre',
-  targetDate: '2026-10-22T18:00:00-03:00',
+  dateLabel: '22 al 24 de octubre de 2026',
   location: {
     venue: 'Sedes por día',
-    city: 'Montevideo, Uruguay',
+    city: 'Montevideo y Punta del Este',
     mapUrl: 'https://www.google.com/maps/search/?api=1&query=Salon%20de%20Eventos%20Especiales%20Palacio%20Legislativo%20Gral.%20Flores%20Montevideo%20Uruguay',
     mapEmbedUrl: 'https://www.google.com/maps?q=Salon%20de%20Eventos%20Especiales%20Palacio%20Legislativo%20Gral.%20Flores%20Montevideo%20Uruguay&output=embed',
     locations: [
       {
+        id: 'palacio-legislativo',
         date: '22 de octubre',
         venue: 'Salón de Eventos Especiales',
         address: 'Palacio Legislativo. Ingreso por Gral. Flores.',
@@ -136,6 +136,7 @@ export const event = {
           'https://www.google.com/maps?q=Salon%20de%20Eventos%20Especiales%20Palacio%20Legislativo%20Gral.%20Flores%20Montevideo%20Uruguay&output=embed',
       },
       {
+        id: 'claeh-montevideo',
         date: '23 de octubre',
         venue: 'Universidad CLAEH',
         address: 'Mercedes 1776.',
@@ -144,14 +145,55 @@ export const event = {
         mapEmbedUrl:
           'https://www.google.com/maps?q=Universidad%20CLAEH%20Mercedes%201776%20Montevideo%20Uruguay&output=embed',
       },
+      {
+        id: 'punta-del-este',
+        date: '24 de octubre',
+        venue: 'Jornada académica en Punta del Este',
+        city: 'Punta del Este, Maldonado',
+      },
     ],
   },
   intro:
-    'Un encuentro para intercambiar perspectivas académicas, institucionales y ciudadanas sobre relaciones de consumo.',
+    'Tres días de intercambio, formación y cooperación regional que reunieron a más de 150 participantes en Montevideo y Punta del Este.',
+  stats: [
+    { value: '3', label: 'días' },
+    { value: '+150', label: 'participantes' },
+    { value: '4', label: 'países representados' },
+    { value: '2', label: 'ciudades' },
+  ],
+  balance: {
+    lead:
+      'Durante los días 22, 23 y 24 de octubre, profesionales, autoridades, estudiantes y personas interesadas en la defensa de los consumidores compartieron conocimientos y experiencias de Uruguay, Argentina, Brasil y El Salvador.',
+    conclusion:
+      'La diversidad de los temas, la calidad de las exposiciones y la cooperación entre instituciones permitieron consolidar un espacio regional de formación y reflexión sobre los desafíos actuales de las relaciones de consumo.',
+    page: '/jornadas/balance-2026',
+    pdf: '/assets/balance-jornadas-2026.pdf',
+    days: [
+      {
+        date: '22 de octubre',
+        title: 'Apertura, sobreendeudamiento y nuevas tecnologías',
+        text:
+          'La jornada inaugural se realizó en el Palacio Legislativo. Reunió a autoridades y especialistas para abordar el sobreendeudamiento, las fintech y los riesgos de la contratación digital para niñas, niños y adolescentes.',
+      },
+      {
+        date: '23 de octubre',
+        title: 'Comercio electrónico, salud, accesibilidad e inteligencia artificial',
+        text:
+          'En la Universidad CLAEH se desarrollaron paneles sobre plataformas digitales, derechos de los usuarios de servicios de salud, el rol del Estado, accesibilidad tecnológica e inteligencia artificial aplicada a las relaciones de consumo.',
+      },
+      {
+        date: '24 de octubre',
+        title: 'Nuevos desafíos del Derecho del Consumo',
+        text:
+          'Las actividades continuaron en Punta del Este con un encuentro académico organizado por AUCU y la Facultad de Derecho de la Universidad CLAEH. La actividad fue declarada de interés departamental por la Junta Departamental de Maldonado.',
+      },
+    ],
+  },
   agenda: [
     {
       date: 'Jueves 22 de octubre',
       title: 'Primer día',
+      locationId: 'palacio-legislativo',
       items: [
         {
           time: '18:00',
@@ -180,6 +222,7 @@ export const event = {
     {
       date: 'Viernes 23 de octubre',
       title: 'Segundo día',
+      locationId: 'claeh-montevideo',
       items: [
         {
           time: '9:30 – 11:00',
@@ -222,7 +265,24 @@ export const event = {
         },
       ],
     },
+    {
+      date: 'Sábado 24 de octubre',
+      title: 'Tercer día',
+      locationId: 'punta-del-este',
+      items: [
+        {
+          title: 'Contratar y decidir en el entorno digital',
+          description:
+            'Dr. Carlos Tambussi 🇦🇷 · Dra. María Jimena Mansilla 🇦🇷 · Dr. Sebastián Barocelli 🇦🇷',
+        },
+        {
+          title: 'Fintech y sobreendeudamiento',
+          description: 'Dra. Paula Rodríguez 🇦🇷 · Dr. Álvaro Fuentes 🇺🇾',
+        },
+      ],
+    },
   ],
+  gallery: [],
   speakers: [
     {
       name: 'Dr. Carlos Eduardo Tambussi',
